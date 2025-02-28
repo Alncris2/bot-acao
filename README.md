@@ -1,4 +1,4 @@
-# Action Bronks Ação Bot
+# Action Bronks Ação Bot 
 
 Um bot do Discord para gerenciar ações, solicitações de participação e aprovações.
 
