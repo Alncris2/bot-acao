@@ -3,15 +3,27 @@ const {
     ModalBuilder,
     TextInputBuilder,
     TextInputStyle,
-    ActionRowBuilder
+    ActionRowBuilder,
+    PermissionFlagsBits
 } = require('discord.js');
+const config = require('../config');
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('iniciaracao')
-        .setDescription('Inicia uma nova ação'),
+        .setDescription('Inicia uma nova ação')
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageGuild),
 
     async execute(interaction) {
+        const isAdmin = config.adminRoleIds.some(roleId => interaction.member.roles.cache.has(roleId));
+
+        if (!isAdmin) {
+            return await interaction.reply({
+                content: 'Você não tem permissão para iniciar uma ação.',
+                flags: 64
+            });
+        }
+
         const modal = new ModalBuilder()
             .setCustomId('iniciaracao-modal')
             .setTitle('Iniciar Nova Ação');
