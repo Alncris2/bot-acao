@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "deploy": "node deploy-commands.js"
+    "deploy": "node deploy-commands.js",
+    "postinstall": "echo \"$CONFIG_JSON\" > config.json"
   },
   "keywords": [
     "discord",

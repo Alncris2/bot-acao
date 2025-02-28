@@ -1,4 +1,4 @@
-# Action Buddy Bot
+# Action Bronks Ação Bot
 
 Um bot do Discord para gerenciar ações, solicitações de participação e aprovações.
 
@@ -25,7 +25,6 @@ CLIENT_ID=id_do_aplicativo_do_bot
 
 ```json
 {
-  "prefix": "!",
   "adminRoleIds": ["ID_DO_CARGO_ADMIN_1", "ID_DO_CARGO_ADMIN_2"],
   "actionCategory": "ID_DA_CATEGORIA_PARA_TOPICOS",
   "mainActionChannel": "ID_DO_CANAL_PRINCIPAL_PARA_ACOES"
