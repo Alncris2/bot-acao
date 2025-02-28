@@ -4,10 +4,10 @@
   "description": "Discord bot for managing actions with participation requests and approvals",
   "main": "index.js",
   "scripts": {
+    "prestart": "echo \"$CONFIG_JSON\" > config.json"
     "start": "node index.js",
     "dev": "nodemon index.js",
     "deploy": "node deploy-commands.js",
-    "postinstall": "echo \"$CONFIG_JSON\" > config.json"
   },
   "keywords": [
     "discord",
