@@ -89,7 +89,7 @@ function createHelpEmbed() {
     .addFields(
         {
             name: '1️⃣ Selecione o Tipo de Craft',
-            value: 'Primeiro, você precisa escolher o tipo de craft que deseja registrar. O tipo será uma categoria de itens, como armas ou equipamentos.',
+            value: 'Primeiro, você precisa escolher o tipo de craft que deseja registrar. O tipo será qual munição que você fabricou.',
             inline: false,
         },
         {
@@ -99,22 +99,22 @@ function createHelpEmbed() {
         },
         {
             name: '🔹 Nome',
-            value: 'Informe o nome do jogador que está registrando o craft, por exemplo, "Player1" ou "JogadorX".',
+            value: 'Informe o nome do jogador que crafetou o item, por exemplo, "Christian Grey" ou "Velho LMV".',
             inline: true,
         },
         {
             name: '🔹 ID',
-            value: 'Informe o seu ID do jogo, por exemplo, 585 ou 25265',
+            value: 'Informe o seu ID, por exemplo, 585 ou 25265 (Campo numérico inteiro).',
             inline: true,
         },
         {
             name: '🔹 Quantidade',
-            value: 'Informe a quantidade de itens relacionados ao craft que está sendo registrado.',
+            value: 'Informe a quantidade de itens relacionados ao craft que está sendo registrado. (Campo numérico inteiro maior que 0)',
             inline: true,
         },
         {
             name: '🔹 Motivo (Opcional)',
-            value: 'Você pode fornecer um motivo para o registro do craft, como a razão de criação ou obtenção do item (este campo é opcional).',
+            value: 'Você pode fornecer um motivo para o registro do craft, por exemplo, "Venda", "Uso Pessoal", "Dominas" (Este campo é opcional).',
             inline: true,
         },
         {

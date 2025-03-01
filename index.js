@@ -32,7 +32,7 @@ for (const file of commandFiles) {
     client.commands.set(command.data.name, command);
     commands.push(command.data.toJSON());
   } else {
-    console.log(`[AVISO] O comando em ${filePath} está faltando a propriedade "data" ou "execute".`);
+    console.warn(`[AVISO] O comando em ${filePath} está faltando a propriedade "data" ou "execute".`);
   }
 }
 
@@ -56,14 +56,14 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 (async () => {
   try {
-    console.log('Começando a atualizar os comandos slash (/).');
+    console.log('🔄 Começando a atualizar os comandos slash (/).');
 
     await rest.put(
       Routes.applicationCommands(process.env.CLIENT_ID),
       { body: commands },
     );
 
-    console.log('Comandos slash (/) atualizados com sucesso.');
+    console.log('✅ Comandos slash (/) atualizados com sucesso.');
   } catch (error) {
     console.error(error);
   }
