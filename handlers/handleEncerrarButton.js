@@ -15,7 +15,7 @@ async function handleEncerrarButton(interaction, client) {
             });
         }
 
-        const isAdmin = config.adminRoleIds.some(roleId => interaction.member.roles.cache.has(roleId));
+        const isAdmin = config.adminAcaoRoleIds.some(roleId => interaction.member.roles.cache.has(roleId));
 
         if (!isAdmin) {
             return await interaction.reply({

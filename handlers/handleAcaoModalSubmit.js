@@ -70,7 +70,7 @@ async function handleAcaoModalSubmit(interaction, client) {
                 id: guild.id,
                 deny: [PermissionFlagsBits.ViewChannel],
             },
-            ...config.adminRoleIds.map(roleId => ({
+            ...config.adminAcaoRoleIds.map(roleId => ({
                 id: roleId,
                 allow: [PermissionFlagsBits.ViewChannel],
             })),

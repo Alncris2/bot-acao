@@ -1,13 +1,13 @@
-# Action Bronks Ação Bot 
+# Action Bronks Ação Bot
 
 Um bot do Discord para gerenciar ações, solicitações de participação e aprovações.
 
 ## Funcionalidades
 
-- Criar novas ações com nome, data, rádio e vagas
-- Gerenciar solicitações de participação
-- Aprovar, recusar ou colocar usuários como reserva
-- Encerrar ações quando finalizadas
+-   Criar novas ações com nome, data, rádio e vagas
+-   Gerenciar solicitações de participação
+-   Aprovar, recusar ou colocar usuários como reserva
+-   Encerrar ações quando finalizadas
 
 ## Configuração
 
@@ -25,9 +25,11 @@ CLIENT_ID=id_do_aplicativo_do_bot
 
 ```json
 {
-  "adminRoleIds": ["ID_DO_CARGO_ADMIN_1", "ID_DO_CARGO_ADMIN_2"],
-  "actionCategory": "ID_DA_CATEGORIA_PARA_TOPICOS",
-  "mainActionChannel": "ID_DO_CANAL_PRINCIPAL_PARA_ACOES"
+    "adminAcaoRoleIds": ["ID_DO_CARGO_ADMIN_ACAO_1", "ID_DO_CARGO_ADMIN_ACAO_2"],
+    "adminCraftRoleIds": ["ID_DO_CARGO_ADMIN_CRAFT_1"],
+    "actionCategory": "ID_DA_CATEGORIA_PARA_TOPICOS",
+    "mainActionChannel": "ID_DO_CANAL_PRINCIPAL_PARA_ACOES",
+    "craftChannelId": null
 }
 ```
 
@@ -36,7 +38,7 @@ CLIENT_ID=id_do_aplicativo_do_bot
 
 ## Comandos
 
-- `/iniciaracao` - Inicia uma nova ação através de um modal
+-   `/iniciaracao` - Inicia uma nova ação através de um modal
 
 ## Fluxo de Trabalho
 
