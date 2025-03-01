@@ -8,26 +8,31 @@ module.exports = {
 
         const statuses = [
             {
+                name: 'Gerenciando ações',
                 type: ActivityType.Custom,
                 state: '🔧 Gerenciando ações',
                 url: "https://discord.gg/eRTzAV7S"
             },
             {
+                name: 'Aprovando solicitações',
                 type: ActivityType.Custom,
                 state: '🔍 Aprovando solicitações',
                 url: "https://discord.gg/eRTzAV7S"
             },
             {
+                name: 'Organizando planilha de craft',
                 type: ActivityType.Custom,
                 state: '📋 Organizando planilha de craft',
                 url: "https://discord.gg/eRTzAV7S"
             },
             {
+                name: 'Melhorando a experiência',
                 type: ActivityType.Custom,
-                state: '🛠️Melhorando a experiência ',
+                state: '🛠️ Melhorando a experiência',
                 url: "https://discord.gg/eRTzAV7S"
             },
             {
+                name: 'Ajudando a comunidade',
                 type: ActivityType.Custom,
                 state: '🤝 Ajudando a comunidade',
                 url: "https://discord.gg/eRTzAV7S"
