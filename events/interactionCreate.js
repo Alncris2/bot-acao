@@ -94,7 +94,7 @@ module.exports = {
                 .setTitle('Registrar Craft');
 
             const nicknameUser = interaction.member.nickname;
-            const regex = /\[\d+\] (.+?) \| (\d+)/;
+            const regex = /\[[\w]+\] (.+?) (?:-|\\|) ?(\d+)/;
             const match = nicknameUser?.match(regex);
             const [_, nome, id] = match ? match : [null, '', ''];
 
